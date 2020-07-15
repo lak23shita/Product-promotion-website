@@ -1,0 +1,482 @@
+/* Themes and Color Schemes */
+
+:root {
+    --white: white;
+    --gray0: #f8f8f8;
+    --gray1: #dbe1e8;
+    --blue0: #0601ff;
+    --blue1: #0084a5;
+    --green: #5FD588;
+    --light: #F2F2F2;
+    --dark: #0f0f0f;
+}
+
+.light {
+    --bg: var(--light);
+    --bg-nav: var(--gray0);
+    --bg-dropdown: var(--blue0);
+    --border-color: var(--blue1);
+    --text: var(--white);
+}
+
+
+.dark {
+    --bg: var(--dark);
+    --bg-nav: var(--gray0);
+    --bg-dropdown: var(--blue1);
+    --border-color: var(--blue0);
+    --text: var(--white);
+}
+
+/* Global Styling */
+
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Bootstrap */
+
+.navbar {
+    height: 6rem;
+    padding-left: 3.5vw;
+    padding-right: 2.5vw;
+    background-color: white;
+    color: blue;
+    filter: drop-shadow(2px 3px 10px rgba(0, 0, 0, .7));
+}
+
+.navbar i {
+    color: blue;
+}
+
+.nav-item a {
+    font-weight: 700;
+    margin-top: 5px;
+    margin-right: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.9em;
+    color: blue;
+}
+
+.navbar-brand {
+    font-size: xx-large;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: blue;
+}
+
+.navbar .btn-download {
+    background-color: blue;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 40px;
+    color: white;
+    text-align: center;
+}
+
+.navbar .btn-download i {
+    color: white;
+}
+
+.navbar-collapse {
+    background-color: white;
+    padding: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+/* mouse over link */
+.navbar a:hover {
+    color: rgb(11, 145, 255);
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    font-size: 1.1em;
+}
+/* Footer */
+
+footer img {
+    transition: all 800ms;
+    animation: bottom 800ms ease-in alternate infinite;
+}
+
+@keyframes bottom {
+    from {
+        transform: translate(0%, 0%);
+    }
+
+    to {
+        transform: translate(0.5%, 1%);
+    }
+}
+
+footer li {
+    list-style: none;
+    font-size: 1.4vw;
+}
+
+footer a {
+    font-size: 1.4vw;
+    color: white;
+}
+  
+/* mouse over link */
+footer a:hover {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    
+}
+
+footer h1 {
+    padding-bottom: 0.5rem;
+    font-size: 2.5vw;
+    font-weight: 700;
+}
+
+footer h3 {
+    padding-bottom: 0.5rem;
+    font-size: 2.5vw;
+    font-weight: 700;
+}
+
+
+footer {
+    color: white;
+    background-color: blue;
+    width: 100%;
+    overflow-y: hidden;
+    margin-top: 4em;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    padding: 1rem 0rem 0rem 0rem;
+}
+footer img {
+    width: 100%;
+    height: auto;
+}
+footer .made {
+    background-color: rgb(2, 2, 216);
+    color: white;
+    font-size: 4rem;
+    filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, .7));
+}
+
+
+/* Main Page */
+
+.affix {
+    background-color: #eee;
+    -webkit-transition: padding 0.2s ease-out;
+    -moz-transition: padding 0.2s ease-out;
+    -o-transition: padding 0.2s ease-out;
+    transition: padding 0.2s ease-out;
+}
+
+.arrow {
+    background: linear-gradient(blue,rgb(23, 151, 255));
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    top: 90%;
+    left: 50%;
+    filter: drop-shadow(2px 4px 1px rgba(0, 0, 0, .7));
+    transform: translateX(-50%);
+    transition: all 800ms;
+    animation: updown 800ms ease-in alternate infinite;
+}
+
+@keyframes updown {
+    from {
+        transform: translate(-50%, 0%);
+    }
+
+    to {
+        transform: translate(-50%, 10%);
+    }
+}
+
+.arrow:hover {
+    color: rgb(23, 151, 255);
+}
+
+.video {
+    margin-top: 4.5rem;
+    overflow-y: hidden;
+}
+
+#sh {
+    background: linear-gradient(rgb(3, 3, 148),blue);
+    text-align: center;
+    border-radius: 40px;
+    padding: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.bluestack {
+    background-color: rgb(2, 2, 216);
+    height: 2rem;
+    filter: drop-shadow(1px -2px 5px rgba(0, 0, 0, .7));
+}
+
+.big-heading {
+    font-size: 1.5em;
+    color: white;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.heading {
+    font-weight: 700;
+    color: white;
+    font-size: 3em;
+}
+
+.title-image {
+    width: 100%;
+} 
+
+/*Features*/
+
+#features {
+    background-color: blue;
+    border-radius: 40px;
+    padding-top: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 3rem;
+    color: white;
+    text-align: center;
+}
+
+#features h3 {
+    font-weight: 700;
+    color: white;
+    font-size: 3vm;
+}
+
+#features h2 {
+    font-weight: 700;
+    color: white;
+    font-size: 3em;
+}
+
+#features p {
+    font-size: 1.3em;
+}
+
+.icon {
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.icon:hover {
+    color: rgb(2, 2, 216);
+}
+
+.para {
+    text-align: center;
+    color: white;
+    font-size: 3.4vw;
+    font-weight: 700;
+    padding-top: 50px;
+    padding-left: 16vw;
+    padding-bottom: 10px;
+}
+
+section h2, section p {
+    color: blue;
+}
+section h2 {
+    font-weight: 700;
+    font-size: 3em;
+}
+section p {
+    font-size: 1.3em;
+}
+
+.card, .card p {
+    background-color: blue;
+    color: white;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-radius: 40px ;
+}
+
+/*FAQ*/
+
+.faq{
+     font-weight: 700;
+     font-size: 3em;
+     color:  blue;
+     padding: 20px;
+ }
+ .accordion-section li {
+    list-style: none;
+ }
+
+ .accordion-section .panel-default > .panel-heading {
+     border: 0;
+     background: linear-gradient(blue,rgb(3, 3, 148));
+     border-radius: 10px;
+     padding: 0;
+ }
+ 
+ .accordion-section .panel-default .panel-title a {
+     display: block;
+     color: white;
+     font-size: 1.3vm;
+ }
+ 
+ .accordion-section .panel-default .panel-title a:after {
+     font-family: 'FontAwesome';
+     font-size: 3rem;
+     content: "\f106";
+     color: white;
+     float: right;
+     margin-top: -12px;
+ }
+ 
+ .accordion-section .panel-title a:hover {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-size: 1.1em;
+    
+}
+ 
+ .accordion-section .panel-default .panel-title a.collapsed:after {
+     content: "\f107";
+ }
+ 
+ .accordion-section .panel-default .panel-body {
+     font-size: 0.8rem;
+ }
+
+
+ /* Footer */
+ @media (max-width:767px) {
+    footer li a{
+        font-size: 2.4vw;
+    }
+    
+    footer h3 {
+        padding-bottom: 0.5rem;
+        font-size: 5vw;
+        font-weight: 700;
+    }
+
+    footer li b {
+        font-weight:600;
+        font-size: 3.1vw;
+    }
+ }
+
+ @media (max-width: 757px) {
+    footer li a{
+        font-size: 2.3vw;
+    }
+}
+
+@media (max-width: 656px) {
+    footer h3 {
+        font-size: 4.5vw;
+    }
+    footer li a{
+        font-size: 2.2vw;
+    }
+}
+
+@media (max-width: 575px) {
+    
+    footer li a{
+        font-size: 2.0vw;
+    }
+}
+
+@media (max-width: 469px) {
+    footer li a{
+        font-size: 1.9vw;
+    }
+}
+
+/*small screen*/
+@media (max-width:750px) {
+    .arrow {
+        display: none;
+    }
+
+    #sh {
+        text-align: center;
+        height: 800px;
+    }
+
+    .heading {
+        padding-right: 70px;
+        font-size: 30px;
+    }
+
+    .big-heading {
+        padding-right: 60px;
+        font-size: 20px;
+    }
+
+    .app {
+        display: none;
+    }
+
+    .para {
+        display: none;
+
+    }
+
+    #features {
+        height: 780px;
+    }
+
+    .feature-box {
+        padding-bottom: 40px;
+    }
+}
+
+/*large screen*/
+@media (min-width: 750px) {
+    .arrow {
+        top: 90%;
+        transform: scale(0.8) translate(-65%);
+        animation: updown 800ms ease-in alternate infinite;
+    }
+    .feature-box {
+        padding: 20px;
+    }
+}
+
+/*Scrollbar*/
+* {
+    scrollbar-width: thin;
+    scrollbar-color: whitesmoke rgb(11, 145, 255);
+}
+
+*::-webkit-scrollbar {
+    width: 6px;
+    height: 3px;
+}
+
+*::-webkit-scrollbar-track {
+    background: whitesmoke;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(11, 145, 255);
+    border-radius: 3px;
+    border: 3px solid rgb(11, 145, 255);
+}
